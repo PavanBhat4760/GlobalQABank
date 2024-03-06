@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="XYZ Bank Application Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+	<test name="XYZ Bank App Test Cases">
+		<classes>
+			<!-- Login page related tests -->
+			<class name="com.xyz.qa.testcases.LoginPageTest" />
+			
+			<!-- Customer account page related tests -->
+			<class name="com.xyz.qa.testcases.CustomerAccountPageTest" />
+
+			<!-- Transaction page related tests -->
+			<class name="com.xyz.qa.testcases.TransactionPageTest" />
+
+			<!-- Deposit page related tests -->
+			<class name="com.xyz.qa.testcases.DepositPageTest" />
+
+			<!-- Withdraw page related tests -->
+			<class name="com.xyz.qa.testcases.WithdrawPageTest" />
+			
+			<!-- Manager Add Customer page related tests -->
+			<class name="com.xyz.qa.testcases.ManagerAddCustomerPageTest" />
+
+			<!-- Manager Open Account page related tests -->
+			<class name="com.xyz.qa.testcases.ManagerOpenAccountPageTest" />
+
+			<!-- Manager Customers page related tests -->
+			<class name="com.xyz.qa.testcases.ManagerCustomersPageTest" />
+		</classes>
+	</test>
+</suite>
